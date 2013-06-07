@@ -1,7 +1,7 @@
 #Authors: Arnaud Legrand <arnaud.legrand@imag.fr>
 #         Damien Dosimont <damien.dosimont@imag.fr>
 
-#Configure and load libarires
+#Configure and load libraries
 
 options( width = 200 )
 library(plyr)
