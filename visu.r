@@ -55,7 +55,7 @@ states <- as.character(unique(df_native$Value))
 #Create a matrix that will contains activity time per part for each state
 df_agg <-data.frame(matrix(0, ncol = length(states), nrow = (nrow(df_ts_native))))
 
-#Name the column
+#Name the columns
 names(df_agg) <-c(states)
 
 #Add part column in order to merge with df_ts_native df
