@@ -1,11 +1,12 @@
 Package: lpaggregr
 Type: Package
-Title: What the package does (short line)
+Title: R package for LPAggreg
 Version: 1.0
 Date: 2018-01-26
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
-Imports: Rcpp (>= 0.12.11), sqldf, dplyr, ggplot2, reshape2, RColorBrewer, digest, treemap, gplots
+Author: Damien Dosimont
+Maintainer: <damien.dosimont[at]gmail[dot]com>
+Description: R package for LPAggreg
+License: LGPL 3.0
+Imports: Rcpp (>= 0.12.11)
 LinkingTo: Rcpp, RcppArmadillo
+Depends: sqldf, dplyr, ggplot2, reshape2, RColorBrewer, digest, treemap, gplots
