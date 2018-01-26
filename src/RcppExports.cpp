@@ -45,17 +45,10 @@ BEGIN_RCPP
 END_RCPP
 }
 
-RcppExport SEXP lpaggregr_daggregate(SEXP, SEXP, SEXP);
-RcppExport SEXP lpaggregr_haggregate(SEXP, SEXP, SEXP);
-RcppExport SEXP lpaggregr_oaggregate(SEXP, SEXP);
-
 static const R_CallMethodDef CallEntries[] = {
     {"_lpaggregr_oaggregate", (DL_FUNC) &_lpaggregr_oaggregate, 2},
     {"_lpaggregr_haggregate", (DL_FUNC) &_lpaggregr_haggregate, 3},
     {"_lpaggregr_daggregate", (DL_FUNC) &_lpaggregr_daggregate, 3},
-    {"lpaggregr_daggregate", (DL_FUNC) &lpaggregr_daggregate, 3},
-    {"lpaggregr_haggregate", (DL_FUNC) &lpaggregr_haggregate, 3},
-    {"lpaggregr_oaggregate", (DL_FUNC) &lpaggregr_oaggregate, 2},
     {NULL, NULL, 0}
 };
 
