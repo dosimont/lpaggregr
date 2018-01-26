@@ -1,4 +1,6 @@
-#lpaggregr
+# lpaggregr
+
+## Dependencies
 
     Rcpp
     RcppArmadillo
@@ -11,16 +13,16 @@
     treemap
     gplots
 
-##Install
+## Install
 
     library(devtools);
     install_github("dosimont/lpaggregr");
 
-##Load
+## Load
 
     library(lpaggregr);
 
-##Examples
+## Examples
 
     git clone https://github.com/dosimont/lpaggregr-example
 
