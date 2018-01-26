@@ -4,7 +4,7 @@ Title: R package for LPAggreg
 Version: 1.0
 Date: 2018-01-26
 Author: Damien Dosimont
-Maintainer: <damien.dosimont[at]gmail[dot]com>
+Maintainer: <damien.dosimont@gmail.com>
 Description: R package for LPAggreg
 License: LGPL 3.0
 Imports: Rcpp (>= 0.12.11)
