@@ -1,5 +1,16 @@
 #lpaggregr
 
+    Rcpp
+    RcppArmadillo
+    sqldf
+    dplyr
+    ggplot2
+    reshape2
+    RColorBrewer
+    digest
+    treemap
+    gplots
+
 ##Install
 
     library(devtools);
