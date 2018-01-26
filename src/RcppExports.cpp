@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // oaggregate
 List oaggregate(NumericVector micro, SEXP th);
-RcppExport SEXP lpaggregr_oaggregate(SEXP microSEXP, SEXP thSEXP) {
+RcppExport SEXP _lpaggregr_oaggregate(SEXP microSEXP, SEXP thSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -20,7 +20,7 @@ END_RCPP
 }
 // haggregate
 List haggregate(NumericVector micro, NumericVector h, SEXP th);
-RcppExport SEXP lpaggregr_haggregate(SEXP microSEXP, SEXP hSEXP, SEXP thSEXP) {
+RcppExport SEXP _lpaggregr_haggregate(SEXP microSEXP, SEXP hSEXP, SEXP thSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -33,7 +33,7 @@ END_RCPP
 }
 // daggregate
 List daggregate(NumericVector micro, NumericVector h, SEXP th);
-RcppExport SEXP lpaggregr_daggregate(SEXP microSEXP, SEXP hSEXP, SEXP thSEXP) {
+RcppExport SEXP _lpaggregr_daggregate(SEXP microSEXP, SEXP hSEXP, SEXP thSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -45,10 +45,17 @@ BEGIN_RCPP
 END_RCPP
 }
 
+RcppExport SEXP lpaggregr_daggregate(SEXP, SEXP, SEXP);
+RcppExport SEXP lpaggregr_haggregate(SEXP, SEXP, SEXP);
+RcppExport SEXP lpaggregr_oaggregate(SEXP, SEXP);
+
 static const R_CallMethodDef CallEntries[] = {
-    {"lpaggregr_oaggregate", (DL_FUNC) &lpaggregr_oaggregate, 2},
-    {"lpaggregr_haggregate", (DL_FUNC) &lpaggregr_haggregate, 3},
+    {"_lpaggregr_oaggregate", (DL_FUNC) &_lpaggregr_oaggregate, 2},
+    {"_lpaggregr_haggregate", (DL_FUNC) &_lpaggregr_haggregate, 3},
+    {"_lpaggregr_daggregate", (DL_FUNC) &_lpaggregr_daggregate, 3},
     {"lpaggregr_daggregate", (DL_FUNC) &lpaggregr_daggregate, 3},
+    {"lpaggregr_haggregate", (DL_FUNC) &lpaggregr_haggregate, 3},
+    {"lpaggregr_oaggregate", (DL_FUNC) &lpaggregr_oaggregate, 2},
     {NULL, NULL, 0}
 };
 

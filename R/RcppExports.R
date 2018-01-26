@@ -2,14 +2,14 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 oaggregate <- function(micro, th) {
-    .Call(lpaggregr_oaggregate, micro, th)
+    .Call(`_lpaggregr_oaggregate`, micro, th)
 }
 
 haggregate <- function(micro, h, th) {
-    .Call(lpaggregr_haggregate, micro, h, th)
+    .Call(`_lpaggregr_haggregate`, micro, h, th)
 }
 
 daggregate <- function(micro, h, th) {
-    .Call(lpaggregr_daggregate, micro, h, th)
+    .Call(`_lpaggregr_daggregate`, micro, h, th)
 }
 
