@@ -88,7 +88,6 @@ slicerprvcounter <- function (trace, timeSliceNumber)
   trace$End <- trace$End - start
   maxts <- max(trace$End)
   trace <- trace %>% group_by(ResourceId, Type) %>% mutate(Value=lead(Value)) %>% na.omit()
-  print(trace)
   trace$Value<-trace$Value/trace$Duration
   slicets = maxts/timeSliceNumber;
   slices <- data.frame(SliceId=1:timeSliceNumber, TsStart=(0:(timeSliceNumber-1))*slicets, TsEnd=(1:timeSliceNumber)*slicets);
